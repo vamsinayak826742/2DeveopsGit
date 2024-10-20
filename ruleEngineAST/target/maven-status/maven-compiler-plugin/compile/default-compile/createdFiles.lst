@@ -1,0 +1,7 @@
+com\ruleengine\model\UserInput.class
+com\ruleengine\model\Rule.class
+com\ruleengine\repository\RuleRepository.class
+com\ruleengine\ApplicationRunner.class
+com\ruleengine\RuleEngineApplication.class
+com\ruleengine\service\RuleService.class
+com\ruleengine\controller\RuleController.class

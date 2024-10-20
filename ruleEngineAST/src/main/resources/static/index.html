@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rule Engine</h1>
+    </header>
+
+    <section id="create-rule">
+        <h2>Create Rule</h2>
+        <div class="input-box">
+            <label for="ruleName">Rule Name:</label>
+            <input type="text" id="ruleName" placeholder="Enter Rule Name" required><br>
+
+            <label for="ruleExpression">Rule Expression:</label>
+            <input type="text" id="ruleExpression" placeholder="Enter Rule Expression (e.g., age > 18)" required><br>
+
+            <button onclick="createRule()">Add Rule</button>
+        </div>
+    </section>
+
+    <section id="rule-list">
+        <h2>Rule List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rule Name</th>
+                    <th>Rule Expression</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="rulesTableBody">
+                <!-- Rules will be added here dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="evaluate-rule">
+        <h2>Evaluate Rule</h2>
+        <div class="input-box">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter Age" required><br>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" placeholder="Enter Department" required><br>
+
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" placeholder="Enter Salary" required><br>
+
+            <label for="experience">Experience:</label>
+            <input type="number" id="experience" placeholder="Enter Experience" required><br>
+
+            <button onclick="evaluateRule()">Evaluate</button>
+        </div>
+        <div id="evaluationResult" class="result-box"></div>
+		<div id="alertBox" class="alert-box" style="display: none;">
+		    <p id="alertMessage"></p>
+		    <button onclick="closeAlert()">OK</button>
+		</div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
