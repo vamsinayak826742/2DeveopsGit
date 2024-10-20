@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine with AST</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Rule Engine with AST</h1>
+        <p>Create rules, modify conditions, and evaluate eligibility dynamically.</p>
+    </header>
+
+    <form id="ruleForm">
+        <h2>Create New Rule</h2>
+        <div class="form-group">
+            <label for="ruleName">Rule Name</label>
+            <input type="text" id="ruleName" placeholder="Enter Rule Name" required>
+        </div>
+        <div class="form-group">
+            <label for="ruleExpression">Rule Expression</label>
+            <textarea id="ruleExpression" rows="3" placeholder="Enter Rule Expression" required></textarea>
+        </div>
+        <button type="submit" id="createRuleBtn">Create Rule</button>
+    </form>
+
+    <section id="rules-list">
+        <h2>Existing Rules</h2>
+        <table id="rulesTable">
+            <thead>
+            <tr>
+                <th>Rule Name</th>
+                <th>Expression</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section id="evaluation">
+        <h2>Evaluate User Eligibility</h2>
+        <div class="form-group">
+            <label for="userAge">Age</label>
+            <input type="number" id="userAge" placeholder="Enter Age" required>
+        </div>
+        <div class="form-group">
+            <label for="userIncome">Income</label>
+            <input type="number" id="userIncome" placeholder="Enter Income" required>
+        </div>
+        <div class="form-group">
+            <label for="userDepartment">Department</label>
+            <input type="text" id="userDepartment" placeholder="Enter Department" required>
+        </div>
+        <div class="form-group">
+            <label for="userExperience">Experience (Years)</label>
+            <input type="number" id="userExperience" placeholder="Enter Experience" required>
+        </div>
+        <button type="submit" id="evaluateBtn">Evaluate Eligibility</button>
+
+        <div id="evaluationResult" class="result-box"></div>
+    </section>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
