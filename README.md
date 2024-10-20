@@ -24,11 +24,6 @@ The project uses **Abstract Syntax Tree (AST)** to represent the rules and evalu
 
 ## Getting Started
 
-### Prerequisites
-- **Java 8+** installed
-- **Maven** installed
-- **MongoDB** installed and running
-
 **Note:-** for more information I have provided to some PDF's refer them
 
 ### **Execution of Rule Engine Using AST**
