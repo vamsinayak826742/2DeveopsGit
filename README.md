@@ -34,4 +34,4 @@ The project uses **Abstract Syntax Tree (AST)** to represent the rules and evalu
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/vamsinayak826742/Assignments
+   git clone https://github.com/vamsinayak826742/RuleEngine-using-AST
