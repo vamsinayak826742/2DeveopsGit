@@ -1,4 +1,3 @@
-![Screenshot (808)](https://github.com/user-attachments/assets/7f7256e5-eb60-49bc-9721-2da6c83a4210)
 # Rule Engine using AST
 
 This project is a dynamic **Rule Engine** built using **Spring Boot** and **MongoDB**. It allows users to:
